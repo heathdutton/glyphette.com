@@ -31,6 +31,18 @@
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
 
+              {% if site.author.squarespace_username %}
+              <!-- Behance -->
+              <li class="navigation__item">
+                <a href="https://{{ site.author.squarespace_username }}.squarespace.com"
+                   title="@{{ site.author.squarespace_username }} on Squarespace"
+                   target="_blank">
+                  <i class="fa fa-link"></i>
+                  <span class="label">Squarespace portfolio (no longer updated)</span>
+                </a>
+              </li>
+              {% endif %}
+
               {% if site.author.linkedin_username %}
               <!-- LinkedIn -->
               <li class="navigation__item">
@@ -99,18 +111,6 @@
                    target="_blank">
                   <i class="fa fa-behance"></i>
                   <span class="label">Behance</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.author.squarespace_username %}
-              <!-- Behance -->
-              <li class="navigation__item">
-                <a href="https://{{ site.author.squarespace_username }}.squarespace.com"
-                   title="@{{ site.author.squarespace_username }} on Squarespace"
-                   target="_blank">
-                  <i class="fa fa-link"></i>
-                  <span class="label">Squarespace portfolio (no longer updated)</span>
                 </a>
               </li>
               {% endif %}

@@ -2,13 +2,13 @@
   <i class="fa fa-bars"></i>
 </span>
   
-<header class="panel-cover" style="background-image: url({{ "images/cover-tampa.jpg" | prepend: site.baseurl }})">
+<header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
         <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
-          <img src="http://www.gravatar.com/avatar/150a567c1af6bcdecc0773dc04ae098c?s=200" class="user-image shake-rotate" alt="My Profile Photo">
+          <img src="http://www.gravatar.com/avatar/008c04b79052acbc1a35b08d2bc151d2.jpg?s=200" class="user-image" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
@@ -82,6 +82,18 @@
                    target="_blank">
                   <i class="fa fa-twitter"></i>
                   <span class="label">Twitter</span>
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.author.behance_username %}
+              <!-- Behance -->
+              <li class="navigation__item">
+                <a href="https://www.behance.net/{{ site.author.behance_username }}"
+                   title="@{{ site.author.behance_username }} on Behance"
+                   target="_blank">
+                  <i class="fa fa-behance"></i>
+                  <span class="label">Behance</span>
                 </a>
               </li>
               {% endif %}

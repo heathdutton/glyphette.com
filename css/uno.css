@@ -216,7 +216,7 @@ pre {
 	background: #e25440;
 	border-radius: 3px;
 	text-align: center;
-	color: #57BA86; }
+	color: #42C4DD; }
 
 .container {
 	position: relative;
@@ -253,7 +253,7 @@ pre {
 .avatar,
 .logo {
 	border-radius: 50%;
-	border: 3px solid #57BA86;
+	border: 3px solid #42C4DD;
 	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3); }
 
 hr {
@@ -436,7 +436,7 @@ hr {
 .btn, .navigation__item a {
 	min-width: 25px;
 	padding: 10px 20px;
-	border: 2px solid #57BA86;
+	border: 2px solid #42C4DD;
 	border-radius: 20px;
 	font-size: 1.1em;
 	font-weight: bold;
@@ -445,7 +445,7 @@ hr {
 	color: #FFF;
 	-webkit-font-smoothing: antialiased; }
 	.btn:hover, .navigation__item a:hover {
-		color: #57BA86;
+		color: #42C4DD;
 		border-color: #FFF; }
 
 .btn-secondary {
@@ -492,7 +492,7 @@ hr {
 	position: relative;
 	top: 3px;
 	font-size: 36px;
-	color: #57BA86; }
+	color: #42C4DD; }
 
 nav {
 	display: inline-block;
@@ -512,12 +512,12 @@ nav {
 	.navigation__item a {
 		display: block;
 		position: relative;
-		border-color: #57BA86;
+		border-color: #42C4DD;
 		color: #FFF;
 		opacity: .8; }
 		.navigation__item a:hover {
-			color: #57BA86;
-			border-color: #57BA86;
+			color: #42C4DD;
+			border-color: #42C4DD;
 			opacity: 1; }
 
 .navigation--social {
@@ -601,7 +601,7 @@ input[type="search"],
 input[type="tel"] {
 	width: 240px;
 	padding: 1em 1em;
-	background: #57BA86;
+	background: #42C4DD;
 	border: 1px solid #dddddd;
 	border-radius: 3px;
 	font-size: .9em;

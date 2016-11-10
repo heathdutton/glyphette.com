@@ -7,13 +7,18 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
+        <a href="{% if site.author.behance_username %}https://www.behance.net/{{ site.author.behance_username }}{% else %}{{ site.baseurl }}{% endif %}" title="link to home of {{ site.title }}">
           <img src="http://www.gravatar.com/avatar/008c04b79052acbc1a35b08d2bc151d2.jpg?s=200" class="user-image" alt="My Profile Photo">
-          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+          <!-- <h1 class="panel-cover__title panel-title">{{ site.title }}</h1> -->
         </a>
-        <hr class="panel-cover__divider">
-        <p class="panel-cover__description">{{ site.description }}</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
+        <br/>
+        <!-- <hr class="panel-cover__divider"> -->
+        <img src="/images/logo.svg" width="300" height="200" alt="{{ site.title }}">
+        <p class="panel-cover__description">
+          <span style="display:none;">{{ site.title }}</span>
+          {{ site.description }}</p>
+        <!-- <hr class="panel-cover__divider panel-cover__divider--secondary"> -->
+        <br/>
 
         <div class="navigation-wrapper">
 

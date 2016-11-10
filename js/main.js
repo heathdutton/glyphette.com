@@ -32,4 +32,7 @@ $(document).ready(function () {
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
   });
 
+  setTimeout(function(){
+    $('.user-image').addClass('animated tada');
+  }, 3000);
 })

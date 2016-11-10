@@ -48,8 +48,8 @@ pre.highlight,
 .user-image {
   margin-bottom: 1.2em;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border: 3px solid #42C4DD;
   border-radius:100%;
 }

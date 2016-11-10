@@ -34,5 +34,13 @@ $(document).ready(function () {
 
   setTimeout(function(){
     $('.user-image').addClass('animated tada');
+    var del = 0;
+    $('.navigation li').each(function(){
+      var t = $(this);
+      del += 100;
+      setTimeout(function(){
+        t.toggleClass('animated bounce');
+      }, del);
+    });
   }, 3000);
 })

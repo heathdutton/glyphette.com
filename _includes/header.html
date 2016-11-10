@@ -103,6 +103,18 @@
               </li>
               {% endif %}
 
+              {% if site.author.squarespace_username %}
+              <!-- Behance -->
+              <li class="navigation__item">
+                <a href="https://{{ site.author.squarespace_username }}.squarespace.com"
+                   title="@{{ site.author.squarespace_username }} on Squarespace"
+                   target="_blank">
+                  <i class="fa fa-link"></i>
+                  <span class="label">Squarespace portfolio (no longer updated)</span>
+                </a>
+              </li>
+              {% endif %}
+
               {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">

@@ -32,17 +32,19 @@ $(document).ready(function () {
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
   });
 
-  setTimeout(function(){
-    $('.user-image').addClass('animated tada');
-    var del = 0;
+  $(document).load(function(){
     setTimeout(function(){
-      $('.navigation li').each(function(){
-        var t = $(this);
-        del += 100;
-        setTimeout(function(){
-          t.toggleClass('animated bounce');
-        }, del);
-      });
-    }, 300);
-  }, 3000);
+      $('.user-image').addClass('animated tada');
+      var del = 0;
+      setTimeout(function(){
+        $('.navigation li').each(function(){
+          var t = $(this);
+          del += 100;
+          setTimeout(function(){
+            t.toggleClass('animated bounce');
+          }, del);
+        });
+      }, 300);
+    }, 2000);
+  });
 })

@@ -1,0 +1,32 @@
+# Site settings
+Atitle: 'Anna Dutton'
+description: 'Art Director'
+url: 'http://annadutton.com'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+
+author:
+  name: 'anna dutton'
+  email: annaedutton@gmail.com
+  linkedin_username: annaedutton
+  behance_username: annaedutton
+  # github_username: annaedutton
+  # drupal_username: annaedutton
+  twitter_username: annaedutton
+  # facebook_username: annaedutton
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

@@ -14,7 +14,7 @@ author:
   # drupal_username: annaedutton
   # twitter_username: annaedutton
   # facebook_username: annaedutton
-  squarespace_username: annadutton
+  # squarespace_username: annadutton
 
 # Build settings
 destination: _site
